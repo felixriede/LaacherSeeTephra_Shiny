@@ -18,7 +18,7 @@ jobs:
 
     - name: Install R dependencies
       run: |
-        Rscript -e "install.packages('rsconnect')"
+        Rscript -e "install.packages('rsconnect', repos = 'https://cloud.r-project.org', dependencies = TRUE)"
         Rscript -e "if (file.exists('DESCRIPTION')) devtools::install_deps(dependencies = TRUE)"
 
     - name: Deploy to shinyapps.io
