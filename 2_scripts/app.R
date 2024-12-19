@@ -6,9 +6,14 @@ library(ggplot2)
 library(leaflet)
 library(plotly)
 library(DT)
+library(dplyr)
+library(plotly)
+library(readr)
+library(scales)
+library(tidyr)
 
 
-LSTbase <- readr::read_csv(RCurl::getURL("https://raw.githubusercontent.com/felixriede/LaacherSeeTephra_Shiny/refs/heads/gh-pages/1_data/LSTbase.csv"))
+LSTbase <- readr::read_csv(url("https://raw.githubusercontent.com/felixriede/LaacherSeeTephra_Shiny/refs/heads/gh-pages/1_data/LSTbase.csv"))
 LSTbase$`Mean thickness (cm)` <- as.double(LSTbase$`Mean thickness (cm)`)
 LSTbase$`Distance from vent (km)` <- as.double(LSTbase$`Distance from vent (km)`)
 
