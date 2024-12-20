@@ -1,4 +1,4 @@
-# Laacher See Tephra Shiny-App
+# Laacher See Tephra Database
 
 LSTbase ([`./1_data/LSTbase.csv`](https://github.com/felixriede/LaacherSeeTephra_Shiny/blob/main/1_data/LSTbase.csv) is a collation - from the literature - of locations at which Laacher See ejecta has been identified. The data can be inspected interactively using the shiny app on [https://felix-riede.shinyapps.io/LSTbase/](https://felix-riede.shinyapps.io/LSTbase/). 
 
